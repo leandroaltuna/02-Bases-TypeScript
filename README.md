@@ -1,1 +1,1 @@
-npm run dev# 02-Bases
+npm run dev
