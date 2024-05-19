@@ -79,11 +79,10 @@ getPokemonById(1)
     .finally( () => { console.log( 'Finalmente' ) });
 */
 
+/*
 // Node Logger - Winston
 const { buildLogger } = require('./plugins');
 const logger = buildLogger('app.js');
 logger.log( 'Hola Mundo' );
 logger.error( 'Esto es algo malo' ); 
-
-// Final del inicio del curso
-/*---------------------------*/
+*/
