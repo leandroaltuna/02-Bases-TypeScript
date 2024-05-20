@@ -1,36 +1,28 @@
-
 const users = [
-    {
-        id: 1,
-        name: 'John Doe'
-    },
-    {
-        id: 2,
-        name: 'Jane Doe'
-    }
+  {
+    id: 1,
+    name: 'John Doe',
+  },
+  {
+    id: 2,
+    name: 'Jane Doe',
+  }
 ];
 
-function getUserById( id, callback )
-{
-    const usuario = users.find( function(usuario){
-                return usuario.id == id;
-            });
-    
-    //console.log({usuario: usuario}); 
-    // otra manera de llamar es:
-    //console.log({usuario});
 
-    if( !usuario ){
-        return callback(`User not found with id: ${id}`);
-    }
+function getUserById( id, callback ) {
+  const user = users.find( function(user){
+    return user.id === id;  
+  });
 
-    return callback(null, usuario);
-};
+  if( !user ) {
+    return callback(`User not found with id ${id}`);
+  }
 
-//getUserById(1);
+  return callback( null, user );
+}
+
 
 module.exports = {
-    getUserById
-    // otra manera de llamar es:
-    //getUserById: getUserById;
-};
+  getUserById,
+}
