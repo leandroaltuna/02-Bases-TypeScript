@@ -3,7 +3,9 @@
 import winston, { format } from 'winston';
 const { combine, timestamp, json } = format;
 
-const logger = winston.createLogger({
+// export just to be tested in logger.plugin.test.ts
+export const logger = winston.createLogger({
+// const logger = winston.createLogger({
     level: 'info',
     //format: winston.format.json(),
     //defaultMeta: { service: 'user-service' },
